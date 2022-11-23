@@ -1,0 +1,123 @@
+Concept II - SquareSpace
+
+Theme: Target-Rich Enviorment
+
+Conflict/Task - The player must avoid all obstacles and destroy all targets to proceed to the next level.
+
+Story - Work In Progress
+
+Colour Palette - https://coolors.co/fefeff-4f6d7a-fed18c-f28482-fe654f
+
+Game Mechanics:
+
+	- Obstacles 
+
+	- Weaponary
+
+	- Proccedurally Generated Levels
+
+	- Enemies
+
+	- Score System and Level Management
+
+	- Pickup Items and Upgrade System
+
+Obstacles: 
+
+	4 types of Obstacles:
+
+		1. Normal Wall - A wall that does not move, but can be destroyed by the Player's weapon (HP = 150).
+
+		*All other walls are invulnable to the Player's Weapon
+		
+		2. Horizontally Moving Wall - A wall that moves from left to right in a consistent pattern
+
+		3. Vertically Moving Wall - A wall that moves up and returns back down in a consistent pattern
+
+		4. Void Wall - A wall that appears and disappears at a set time. When these types of walls disappear, 
+			the player can pass through them like they are not there.
+
+Weaponary:
+
+	Player's Weapon - A gun that aims toward where the player's mouse is.
+
+	Weapon Stats:
+	
+		Damage = 50
+
+		Rate of Fire = 20 rounds per minute (3 second reload)
+
+		Projectile Speed = Depends if Hitscan weapons are viable
+
+		Starting Ammo = 40 rounds
+
+		Max Ammo = Infinte
+
+
+Enemies:
+
+	4 types of enemies that spawn along the same x cooridnates as the walls (each wall will have an enemy to ethier side of it)
+
+	Enemy 1 = Static Enemy - Enemy doesnt move (HP = 100, Diamond Gain = 2)
+	
+	Enemy 2 = Horizontal Enemy - Enemy moves side to side (Left and Right)  similar to the walls (HP = 150, Diamond Gain = 4)
+
+	Enemy 3 = Vertical Enemy - Enemy moves up and down similar to walls (HP = 200, Diamond Gain = 6)
+
+	Enemy 4 = Void Enemy - same behaviour as walls, expect they will move side to side like the horizontal enemy (HP = 250, Diamond Gain = 8)
+
+	On which side of the wall enemies spawn on will be random as well
+
+	
+
+
+Proccedurally Generated Levels:
+
+	Each Level with have a set length with random obstacles that are proceedurally generated 
+
+		Level 1 = Length: 500, Obstacle Count = 10
+		
+		Level 2 = Length: 1000, Obstacle Count = 20
+
+		Level 3 = Length: 1500, Obstacle Count = 30
+
+	All Obstacles will be 50 meters away from each other.
+
+	All Bullets and Powerups will spawn inbetween the Obstacles (25 m from each obstacle).
+
+
+Pickup Items & Shop System:
+
+	Resources:
+		Bullets
+		Powerups
+		Diamonds
+
+	Powerups:
+		Cold Shock - "Freezes"/Pauses movement of all enemies for 10 seconds
+		Sound Barrier - Destroy all walls in front of you while traveling 50% faster for 3 seconds
+		Time Warp - slows down all speed parameters for 5 seconds (Player Movement, Wall Speed, Enemy Speed)
+
+	Bullets and Powerups - can be found through out the level and in the Shop
+
+	Diamonds are gainned for destroying an enemy 
+
+	Shop:
+
+		Shop can be accessed at the end of each level
+
+		Shop Costs:
+
+			x5 Bullets = 3 Diamonds
+
+			x1 Sound Barrier = 6 Diamonds
+
+			x1 Time Warp = 8 Diamonds
+
+			x1 Cold Shock = 10 Diamonds
+			
+
+	
+
+
+		
